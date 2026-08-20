@@ -220,6 +220,7 @@ public:
         PLAYERHOOK_ON_PLAYER_LEARN_TALENTS,
         PLAYERHOOK_ON_TALENTS_RESET,
         PLAYERHOOK_ON_AFTER_SPEC_SLOT_CHANGED,
+        PLAYERHOOK_ON_PLAYER_RESURRECT,
     }) { }
 
     void OnPlayerLogin(Player* player) override
@@ -240,6 +241,11 @@ public:
     void OnPlayerAfterSpecSlotChanged(Player* player, uint8 /*newSlot*/) override
     {
         RemoveFutaAuras(player);
+        ApplyFutaAuras(player);
+    }
+
+    void OnPlayerResurrect(Player* player, float /*restore_percent*/, bool& /*applySickness*/) override
+    {
         ApplyFutaAuras(player);
     }
 };
