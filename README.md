@@ -20,8 +20,7 @@ By default every multiplier is 1.0, except armor increase from "Improved Tree of
 ## Installation
 
 1. Clone this repo as `modules/mod-futa` in AzerothCore source tree
-2. Import `data/sql/db-world/futa_spell_dbc.sql` into world DB
-3. Run `cmake`
+2. Run `cmake`
 
 > [!NOTE]
 > The module uses custom `spell_dbc` entries that ***might*** conflict with other existing modules or future AzerothCore updates.  
