@@ -1,0 +1,47 @@
+###############################################################################
+# Futa - Tree of Life bonuses without the ugly tree model.
+#
+# Apply Tree of Life passive healing bonuses to Restoration Druids
+# without requiring the Tree of Life shapeshift form.
+###############################################################################
+
+# Apply the core Tree of Life passive (raid-wide +6% healing received) in humanoid form.
+# Default: 1 (enabled)
+Futa.EnableTreeOfLife = 1
+
+# Apply Improved Tree of Life (armor bonus + spirit-to-bonus-healing
+# conversion) in humanoid form.
+# Default: 1 (enabled)
+Futa.EnableImprovedTreeOfLife = 1
+
+# Apply Master Shapeshifter Tree of Life healing bonus (+2%/+4% healing)
+# in humanoid form.
+# Default: 1 (enabled)
+Futa.EnableMasterShapeshifter = 1
+
+# https://www.wowhead.com/wotlk/spell=62111/tree-of-life-healing-boost
+# Tree of Life Healing Boost (+44 flat healing power to specific
+# Restoration spell families). Requires Tree of Life talent.
+# Default: 0 (disabled - unconfirmed whether retail used this spell at all)
+Futa.EnableTreeOfLifeHealingBoost = 0
+
+###############################################################################
+# MODIFIERS - Adjust the strength of specific bonuses
+###############################################################################
+
+# The core Tree of Life healing received bonus applied in humanoid form (+6% at 1.0).
+# Default: 1.0
+Futa.TreeOfLife.HealingReceivedMultiplier = 1.0
+
+# Master Shapeshifter healing bonus applied in humanoid form (+2%/+4% at 1.0).
+# Default: 1.0
+Futa.MasterShapeshifter.HealingDoneMultiplier = 1.0
+
+# Improved Tree of Life armor bonus applied in humanoid form (+67%/+133%/+200% at 1.0).
+# Default: 0.33
+Futa.ImprovedTreeOfLife.ArmorMultiplier = 0.33
+
+# Improved Tree of Life: spirit-to-bonus-healing conversion in humanoid form
+# (5%/10%/15% at 1.0).
+# Default: 1.0
+Futa.ImprovedTreeOfLife.SpiritToHealingBonusMultiplier = 1.0
