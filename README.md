@@ -19,7 +19,7 @@ By default every multiplier is 1.0, except armor increase from "Improved Tree of
 
 ## Installation
 
-1. Place this directory as `modules/mod-futa` in AzerothCore source tree
+1. Clone this repo as `modules/mod-futa` in AzerothCore source tree
 2. Import `data/sql/db-world/futa_spell_dbc.sql` into world DB
 3. Run `cmake`
 
@@ -36,7 +36,7 @@ By default every multiplier is 1.0, except armor increase from "Improved Tree of
 | 96966 | Improved Tree of Life Rank 3 |
 | 96967 | Tree of Life Healing Boost   |
 
-If there is a conflict, the DB will throw an error. Manually adjust IDs in the included sql file if needed.
+If there is a conflict, the DB will throw an error. Manually adjust IDs in `futa_spell_dbc.sql` and `futa.cpp` if needed.
 
 ## Configuration
 
